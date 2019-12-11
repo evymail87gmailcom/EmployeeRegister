@@ -52,6 +52,7 @@ public:
 		department = departmentIn;
 	}
 	void input() {
+
 		cout << "Enter Name: " << endl;
 		cin >> name;
 		cout << "Enter personalNumber: " << endl;
