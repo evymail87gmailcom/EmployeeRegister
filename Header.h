@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include<vector>
 using namespace std;
 #pragma once
 
@@ -17,6 +18,7 @@ public:
 		name = nameIn;
 		personalId = personalIdIn;
 	}
+	~Person() {};
 	virtual void input() = 0;
 	virtual void output() = 0;
 };
@@ -51,6 +53,7 @@ public:
 		salary = salaryIn;
 		department = departmentIn;
 	}
+	~Employee() {};
 	void input() {
 
 		cout << "Enter Name: " << endl;
@@ -109,6 +112,8 @@ public:
 		salary = salaryIn;
 		department = departmentIn;
 	}
+	~Manager() {};
+
 	void input() {
 		cout << "Enter Name: " << endl;
 		cin >> name;
@@ -165,6 +170,8 @@ public:
 		salary = salaryIn;
 		department = departmentIn;
 	}
+	~Consultant() {};
+
 	void input() {
 		cout << "Enter Name: " << endl;
 		cin >> name;
@@ -198,3 +205,5 @@ public:
 		cout << "-----------------------------------------------------------------" << endl;
 	}
 };
+
+
